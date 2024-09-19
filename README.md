@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Here's the updated version of your README file that includes the information on the OpenAI API key requirement, following the structure you've provided:
 
 ---
@@ -141,6 +142,9 @@ For any questions or feedback, feel free to reach out:
 ---
 
 Let me know if there are any further adjustments you'd like to make!
+=======
+# FNBuddy
+>>>>>>> 859708572c62127eca6ae8bb5ccd7b2113efc401
 =======
 # FNBuddy
 >>>>>>> 859708572c62127eca6ae8bb5ccd7b2113efc401
