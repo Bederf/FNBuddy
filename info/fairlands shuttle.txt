@@ -1,0 +1,12 @@
+# Fairland Shuttle Services
+Days: Monday – Friday
+Morning: 06:00 – 09:00 (15 minute intervals)
+Route: Cresta Mall (KFC along Beyer’s Naude Road) - Fairland Campus (Visitors Parking middle section)
+Afternoon: 15:00 – 18:00 (15 minute intervals)
+Route: Fairland Campus (Visitors Parking middle section) - Cresta Mall (KFC on Beyer’s Naude Road)
+
+Weekends and Public Holidays (Saturdays Only)**
+Morning: 06:00 – 08:00 (15 minute intervals)
+Route: Cresta Mall (KFC along Beyer’s Naude Road) - Fairland Campus (Visitors Parking middle section)
+Afternoon: 12:00 – 15:00 (15 minute intervals)
+Route: Fairland Campus (Visitors Parking middle section) - Cresta Mall (KFC on Beyer’s Naude Road)

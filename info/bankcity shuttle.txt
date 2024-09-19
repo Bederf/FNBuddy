@@ -1,0 +1,13 @@
+# BankCity Shuttle Services
+Days: Monday – Friday
+Morning: 06:00 – 09:30 (20 minute intervals)
+Route: Gautrain/Park Station (along Wolmarans street) - Bank City (2FP Basement -1)
+
+Afternoon: 14:00 – 19:00 (20 minute intervals)
+Route: BankCity (2FP Basement 1) - Park Station/Gautrain (along Wolmarans street)
+
+Weekends and Public Holidays: Not available
+
+
+
+

@@ -1,0 +1,13 @@
+# Menlyn Shuttle Services
+Days: Monday – Friday
+Morning: 06:00 – 09:00 (20 minute intervals)
+Routes:
+      1. Gautrain Station Pretoria - Podium entrance (Menlyn office)
+      2. Tshwane House (Johannes Ramokhoase Str) - Podium entrance (Menlyn office)
+      3. Tshwane House via Francis Baard Street - Hatfield Gautrain - Podium entrance (Menlyn office)
+Afternoon: 15:30 - 18:00 (20 minute intervals)
+Routes:
+      1. Podium entrance (Menlyn office) - Tshwane House (Johannes Ramokhoase Str)
+      2. Podium entrance (Menlyn office) - Gautrain Station Pretoria - Tshwane House (Johannes Ramokhoase Str)
+      3. Podium entrance (Menlyn office) - Hatfield Gautrain - Tshwane House
+Weekends & Public Holidays: Not available

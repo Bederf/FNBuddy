@@ -1,0 +1,39 @@
+# Parking Booking and Access System
+
+## General Parking Information
+- Parking can be booked using the WizzPass system for guests and internal visitors at BankCity and Merchant Place. This platform allows you to reserve and utilize parking as needed.
+- Pre-booking is available for parking ahead of a visit.
+
+## External Visitors
+- External visitors must be booked using the WizzPass visitors' system at all campuses.
+- [WizzPass Booking System](https://firstrand.wizzpass.com/host_users/host_dashboard)
+
+## Disabled Parking
+- Disabled parking requires authorization by Wellness before allocation of permanent parking where the disabled employee is situated.
+
+## Motorcycle Parking
+- Motorcycle parking does not receive clearance on access cards. Staff members must show their access card at the boom, and security will open it.
+- Helpdesk logs a call on MyQ with the staff member’s details and motorbike details to provide a sticker on the access card, similar to a laptop card.
+- Motorcycle parking is in designated motorcycle parking in the basement, not in a regular parking bay.
+
+## Access Cards
+- All permanent residents (staff or subcontractors) who enter FNB premises must have an access card.
+- To obtain an access card, apply through [SailPoint IdentityIQ - Manage User Access](https://fnb.co.za).
+  - The application must be approved by an authorized person from your department.
+  - Collect the access card within 3 working days, or the application will be automatically rejected.
+- Access cards, laptop cards, and replacement cards can be collected at the Access Card Office or Receptions.
+
+## Laptop Access
+- If bringing a laptop regularly, apply for a clearance card via [SailPoint IdentityIQ - Manage User Access](https://fnb.co.za).
+- For ad hoc laptop use, complete the asset removal form, authorized by a qualified staff member.
+
+## Firearms and Security
+- Firearms are not allowed in the building. They must be locked away in lockers provided at the main entrance.
+
+## After-Hours Access
+- For after-hours access, special arrangements can be made by contacting Security in advance if your access card is not activated for 24-hour access.
+
+## Deliveries
+- All goods delivered to campus must go through the goods receiving facilities.
+- No deliveries or collection at the reception desk. You will be contacted by goods receiving staff to collect goods after a security check.
+- Goods must be collected promptly as the facility does not offer storage and is not responsible for lost or damaged goods.

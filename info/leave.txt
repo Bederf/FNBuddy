@@ -1,0 +1,202 @@
+# Annual Leave Entitlements (Full-Time and Part-Time Employees)
+
+## 6-Day Work Week
+- **Bands A-C (inclusive of BS and CS and employees earning min. Band C salary and above)**: 
+  - Statutory Leave: 18 days
+  - Contractual Leave: 15 days
+  - Total Leave: 33 days
+- **Bands D-F (inclusive of DS) 0-5 years**:
+  - Statutory Leave: 18 days
+  - Contractual Leave: 6 days
+  - Total Leave: 24 days
+- **Bands D-F (inclusive of DS) 6+ years**:
+  - Statutory Leave: 18 days
+  - Contractual Leave: 12 days
+  - Total Leave: 30 days
+
+## 5-Day Work Week
+- **Bands A-C (inclusive of BS and CS and employees earning min. Band C salary and above)**:
+  - Statutory Leave: 15 days
+  - Contractual Leave: 13 days
+  - Total Leave: 28 days
+- **Bands D-F (inclusive of DS) 0-5 years**:
+  - Statutory Leave: 15 days
+  - Contractual Leave: 5 days
+  - Total Leave: 20 days
+- **Bands D-F (inclusive of DS) 6+ years**:
+  - Statutory Leave: 15 days
+  - Contractual Leave: 10 days
+  - Total Leave: 25 days
+
+## 4-Day Work Week
+- **Bands A-C (inclusive of BS and CS and employees earning min. Band C salary and above)**:
+  - Statutory Leave: 12 days
+  - Contractual Leave: 10 days
+  - Total Leave: 22 days
+- **Bands D-F (inclusive of DS) 0-5 years**:
+  - Statutory Leave: 12 days
+  - Contractual Leave: 4 days
+  - Total Leave: 16 days
+- **Bands D-F (inclusive of DS) 6+ years**:
+  - Statutory Leave: 12 days
+  - Contractual Leave: 8 days
+  - Total Leave: 20 days
+
+## 3-Day Work Week
+- **Bands A-C (inclusive of BS and CS and employees earning min. Band C salary and above)**:
+  - Statutory Leave: 9 days
+  - Contractual Leave: 8 days
+  - Total Leave: 17 days
+- **Bands D-F (inclusive of DS) 0-5 years**:
+  - Statutory Leave: 9 days
+  - Contractual Leave: 3 days
+  - Total Leave: 12 days
+- **Bands D-F (inclusive of DS) 6+ years**:
+  - Statutory Leave: 9 days
+  - Contractual Leave: 6 days
+  - Total Leave: 15 days
+
+## 2-Day Work Week
+- **Bands A-C (inclusive of BS and CS and employees earning min. Band C salary and above)**:
+  - Statutory Leave: 6 days
+  - Contractual Leave: 5 days
+  - Total Leave: 11 days
+- **Bands D-F (inclusive of DS) 0-5 years**:
+  - Statutory Leave: 6 days
+  - Contractual Leave: 2 days
+  - Total Leave: 8 days
+- **Bands D-F (inclusive of DS) 6+ years**:
+  - Statutory Leave: 6 days
+  - Contractual Leave: 4 days
+  - Total Leave: 10 days
+
+# Scope
+- This policy is applicable to all permanent and permanent part-time employees of the bank.
+- Re-engaged pensioners will qualify for leave accrual which is applicable to their new band.
+
+# Eligibility
+- All leave becomes a right on accrual and may be taken at any time at the convenience of the bank.
+- Leave will be calculated according to your contracted working week.
+
+# Leave Accrual
+- As from 6 November 2023, statutory leave which equates to 3 working weeks will be allocated upfront annually in the employee’s anniversary month of joining or re-joining the bank and will be pro-rated if the employee does not begin on the 1st of the month.
+- Although statutory leave is allocated upfront annually in your anniversary month, in principle it is meant to accrue monthly. If the employee terminates employment with the group before the leave days accrue, the employee must refund the gross amounts of any leave taken in advance.
+- Contractual leave will accrue monthly in arrears from the month of joining and will be pro-rated if the employee does not begin on the 1st of the month.
+- On 30 June each year, outstanding leave in excess of the maximum accrual will be automatically commuted for cash and paid in July. Employees seconded outside of South Africa are exempt.
+- Employees may accrue annual leave to the following maximum values:
+  - 6-day work week: 72 days
+  - 5-day work week: 60 days
+  - 4-day work week: 48 days
+  - 3-day work week: 36 days
+  - 2-day work week: 24 days
+
+If you have previously used the interim leave application form please remember to re-capture any leave on Workday.  In addition remember that all future dated leave that was applied for on Oracle will also need to be recaptured on Workday.  All leave must be captured by close of business 9 November. 
+
+ 
+
+Note:  Failure to capture your leave on Workday may result in disciplinary action. Please visit MEatWork (sharepoint.com) where quick reference guides are available on how to log into Workday and how to capture leave. 
+
+ 
+
+ 
+
+Only applicable to South Africa and Namibia.
+
+There are many different Absence (Leave) types which are built as ‘plans’ in Workday, for example Annual Leave, Sick Leave and Maternity Leave.
+
+ 
+
+In Workday, leave is categorised into two concepts, Absence and Time Off.
+
+ 
+
+Leave of Absence
+
+ 
+
+Generally longer-term, for examples Maternity Leave, Sabbatical Leave
+The request is based on a range of dates including the first day of leave and the expected return date.
+Supporting documents will be required when submitting the request.
+ 
+
+Time Off
+​​​​​​​
+
+Generally shorter-term, for example Annual Leave, Sick Leave or Study Leave.
+The return date is typically known upfront.
+The request is based on each day the worker is expected to be off works.
+Supporting documents may be required when submitting certain requests.
+ 
+
+There are many different Absence (Leave) Types which are built as ‘plans’ in Workday.
+
+ 
+
+You will be able to log your Absence/Time Off based on the different types of leave.
+
+ 
+
+Some examples of Absence plans (Leave Types) in Workday include:
+
+ 
+
+Annual Leave
+Sports Leave ‒ National
+Special Circumstances Sick Leave
+Compassionate Leave
+Discretionary Study Leave
+Paternity/Parental Leave 
+Long-service Leave
+Annual Leave Commutation
+Sick Leave
+ 
+
+For more information on the types of Leave offered by FirstRand, please access the HR manual.  ​​​​​​​
+
+
+
+
+
+As an employee you are responsible for:
+
+ 
+
+Discussing all leave requirements with your line manager as certain absences are auto-approved or auto-declined.
+Ensure that the rule for annual leave is adhered to, namely that you take three weeks of annual leave in every anniversary cycle, of which two weeks must be consecutive.
+As an employee, you are fully responsible for complying with the rules.​​​​​​​​​
+
+
+
+
+In order to improve both user experience and line manager efficiency, certain leave types have been identified to either auto-approve or auto-decline after seven days.
+
+ 
+
+This means that should a line manager take no action to approve or decline leave on Workday, it will no longer be escalated before being auto-approved or auto-declined based on the leave type.
+
+ 
+
+Employee and line manager are accountable to ensure adherence to policy. This includes ensuring the availability of consecutive days as well as supporting documentation for transactions such as study leave, sick leave or maternity leave.
+
+The following Leave Types will be auto-declined after seven days:
+​​​​​​​
+
+Maternity Leave
+ Unpaid Maternity Leave
+ Unpaid leave
+ Any Leave Commutation
+ Sabbatical Leave
+ Unpaid Sabbatical Leave
+ Injury on Duty
+ Special Leave Types
+ Commissioned surrogate birth
+ Adoption Leave
+ Sports Leave
+
+
+The following Leave Types will be auto-approved after seven days:
+​​​​​​​Annual Leave
+Family Responsibility Leave
+Paternity/Parental Leave
+Study Leave
+Long-service Leave

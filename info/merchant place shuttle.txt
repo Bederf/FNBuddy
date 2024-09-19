@@ -1,0 +1,8 @@
+# Merchant Place Shuttle Services
+Days: Monday – Friday
+Morning: 06:00 – 09:00 (15 minute intervals)
+Route: Gautrain station (inside building) - 3 Merchant Place and 5 Merchant Place (Gwen Lane)
+Afternoon: 15:00 – 18:00 (15 minute intervals)
+Route: 3 Merchant Place and 5 Merchant Place (Gwen Lane) – Gautrain station (inside building)
+Campus to Campus: Not available
+Weekends and Public Holidays: Not available
