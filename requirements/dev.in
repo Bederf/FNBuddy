@@ -1,0 +1,4 @@
+# dev.in
+-r base.in
+# Add any development-specific packages here, for example:
+# pytest
