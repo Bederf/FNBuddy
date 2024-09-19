@@ -54,7 +54,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Bederf/FNBuddy.git
+   pip install git+https://github.com/Bederf/FNBuddy.git@master#egg=FNBuddy
+
    cd FNBuddy
    ```
 
@@ -92,7 +93,7 @@ Before you begin, ensure you have the following installed:
    python fnbuddy-info.py
    ```
 
-   Your local app should now be running on `http://127.0.0.1:5006/`.
+   Your local app should now be running on `http://127.0.0.1:8000/`.
 
 ## Usage
 
