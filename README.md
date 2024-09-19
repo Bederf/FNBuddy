@@ -90,7 +90,7 @@ Before you begin, ensure you have the following installed:
 5. **Run the Flask app:**
 
    ```bash
-   python fnbuddy-info.py
+   python app.py
    ```
 
    Your local app should now be running on `http://127.0.0.1:5006/`.
