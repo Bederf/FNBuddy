@@ -11,16 +11,7 @@ from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 from openai import OpenAI
 from langchain_community.document_loaders import TextLoader
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
 from langchain.schema import Document
-import asyncio
-import aiofiles
-import logging
-import tracemalloc
-
-# Start tracemalloc for better error tracking
-tracemalloc.start()
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -158,9 +149,10 @@ async def load_documents():
     else:
         app.logger.warning(f"Info directory not found: {info_dir}")
 
-    if not vectorstore:
-        app.logger.warning("No documents found or loaded. Creating empty vectorstore.")
-        vectorstore = FAISS.from_documents([], OpenAIEmbeddings())
+    return documents
+
+documents = load_documents()
+vectorstore = FAISS.from_documents(documents, OpenAIEmbeddings())
 
     app.logger.info("Document loading completed.")
 
@@ -175,17 +167,12 @@ async def query_openai(prompt: str):
         tuple: The AI-generated answer and related questions.
     """
     try:
-        embeddings = OpenAIEmbeddings()
-        query_embedding = await asyncio.to_thread(embeddings.embed_query, prompt)
-
-        docs = vectorstore.similarity_search_by_vector(query_embedding, k=3)
+        docs = vectorstore.similarity_search(prompt, k=3)
         if not docs:
             return "No relevant documents found.", []
 
         context = "\n\n".join([doc.page_content for doc in docs])
-        
-        completion = await asyncio.to_thread(
-            client.chat.completions.create,
+        completion = client.chat.completions.create(
             model="mattshumer/reflection-70b:free",
             messages=[
                 {"role": "system", "content": "You are a helpful assistant for FNB Bank employees."},
@@ -229,26 +216,19 @@ async def index():
     return await render_template('ai_search.html')
 
 @app.route('/upload', methods=['POST'])
-async def upload_file():
-    """
-    Handle file uploads and reload documents after new files are uploaded.
-    """
-    if 'file' not in (await request.files):
-        return jsonify({"error": "No file part in the request."}), 400
-
-    file = (await request.files)['file']
-    if file.filename == '':
-        return jsonify({"error": "No file selected for upload."}), 400
-    
-    if not allowed_file(file.filename):
-        return jsonify({"error": "File type not allowed."}), 400
-
-    filename = secure_filename(file.filename)
-    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    await file.save(file_path)
-
-    # Reload documents after uploading a new file
-    await load_documents()
+def upload_file():
+    """Handle file uploads and reload documents."""
+    if 'file' not in request.files:
+        return redirect(request.url)
+    file = request.files['file']
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        # Reload documents after uploading a new file
+        global documents, vectorstore
+        documents = load_documents()
+        vectorstore = FAISS.from_documents(documents, OpenAIEmbeddings())
+        return redirect(url_for('index'))
     return redirect(url_for('index'))
 
 @app.route('/ai_search', methods=['POST'])
@@ -278,4 +258,4 @@ async def refresh_documents():
     return jsonify({"message": "Documents refreshed successfully"}), 200
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=True, use_reloader=False)
+    app.run(host='0.0.0.0', port=8000, debug=True)

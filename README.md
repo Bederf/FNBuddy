@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-Here's the updated version of your README file that includes the information on the OpenAI API key requirement, following the structure you've provided:
-
----
-
 # FNBuddy
 
 **FNBuddy** is an AI-powered office assistant designed to help with answering facility-related queries. In its current version, FNBuddy retrieves information from local files stored in the `/info` folder and provides real-time assistance to users. Future versions may include additional office solutions, such as integration with SharePoint for document retrieval and broader office management functionalities.
@@ -47,7 +41,7 @@ FNBuddy is designed to assist with answering common facility-related queries usi
 
 Before you begin, ensure you have the following installed:
 
-- Python 3.8 or above
+- Python 3.10
 - pip (Python package manager)
 
 ### Installation
@@ -61,9 +55,12 @@ Before you begin, ensure you have the following installed:
 
 2. **Create and activate a virtual environment:**
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+# Ensure Python 3.10 is installed
+
+  python3.10 -m venv venv
+  source venv/bin/activate   # On Windows use: venv\Scripts\activate
+
+   
    ```
 
 3. **Install the necessary dependencies:**
@@ -90,7 +87,7 @@ Before you begin, ensure you have the following installed:
 5. **Run the Flask app:**
 
    ```bash
-   python fnbuddy-info.py
+   python app.py
    ```
 
    Your local app should now be running on `http://127.0.0.1:5006/`.
@@ -103,6 +100,7 @@ Before you begin, ensure you have the following installed:
 
 - **SharePoint Integration**: Future versions may include the ability to retrieve and reference documents stored in SharePoint.
 - **Total Office Solution**: FNBuddy may evolve into a full office assistant with more comprehensive features such as document management, scheduling, and facility operations.
+- **FNB banking app intergration**: This searh ability can be aplied to perform the same function on any platform and provide any information pertaining to your subject matter.
 
 ## Contributing
 
@@ -139,12 +137,3 @@ For any questions or feedback, feel free to reach out:
 
 - **Pieter Van Rooyen** - [GitHub](https://github.com/Bederf) - [Email](mailto:bederf@gmail.com)
 
----
-
-Let me know if there are any further adjustments you'd like to make!
-=======
-# FNBuddy
->>>>>>> 859708572c62127eca6ae8bb5ccd7b2113efc401
-=======
-# FNBuddy
->>>>>>> 859708572c62127eca6ae8bb5ccd7b2113efc401
