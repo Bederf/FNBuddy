@@ -55,9 +55,12 @@ Before you begin, ensure you have the following installed:
 
 2. **Create and activate a virtual environment:**
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+# Ensure Python 3.10 is installed
+
+  python3.10 -m venv venv
+  source venv/bin/activate   # On Windows use: venv\Scripts\activate
+
+   
    ```
 
 3. **Install the necessary dependencies:**
