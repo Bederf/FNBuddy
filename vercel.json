@@ -17,7 +17,5 @@
   ],
   "env": {
     "PYTHON_VERSION": "3.10",
-    "OPENROUTER_API_KEY": "@openrouter_api_key",
-    "OPENAI_API_KEY": "@openai_api_key"
   }
 }
