@@ -1,10 +1,7 @@
-# base.in
-flask==3.0.3
-pdfplumber==0.11.4
-openai==1.44.1
-langchain
-langchain-core
-langchain-community
-python-dotenv==1.0.1
-faiss-cpu==1.7.4
-langchain-openai==0.0.8
+quart>=0.17.0  # Ensures async capabilities work well
+pdfplumber>=0.6.0  # For handling PDF extraction
+aiofiles>=0.8.0  # For async file handling
+openai>=0.27.0  # Make sure the version matches API requirements
+langchain[community]>=0.0.1  # Core Langchain package with community tools
+faiss-cpu>=1.7.0  # CPU version for vector search
+python-dotenv>=0.21.0  # For environment variable management
