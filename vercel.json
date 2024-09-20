@@ -4,7 +4,9 @@
     {
       "src": "app.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
     }
   ],
   "routes": [
@@ -15,7 +17,7 @@
   ],
   "env": {
     "PYTHON_VERSION": "3.10",
-    "OPENROUTER_API_KEY": "@openrouter_api_key",  // Managed in Vercel dashboard
-    "OPENAI_API_KEY": "@openai_api_key"  // Managed in Vercel dashboard
+    "OPENROUTER_API_KEY": "@openrouter_api_key",
+    "OPENAI_API_KEY": "@openai_api_key"
   }
 }
