@@ -41,7 +41,7 @@ FNBuddy is designed to assist with answering common facility-related queries usi
 
 Before you begin, ensure you have the following installed:
 
-- Python 3.8 or above
+- Python 3.10
 - pip (Python package manager)
 
 ### Installation
