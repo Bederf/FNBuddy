@@ -5,9 +5,9 @@ from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 from openai import OpenAI
 from langchain_community.document_loaders import TextLoader
-from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
 from langchain.schema import Document
+from annoy import AnnoyIndex
+import numpy as np
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -65,16 +65,34 @@ def load_documents():
     return documents
 
 documents = load_documents()
-vectorstore = FAISS.from_documents(documents, OpenAIEmbeddings())
+
+# Initialize Annoy index with vector dimension (adjust based on your embedding size)
+vector_dim = 512  # Replace with the actual dimension of your embeddings
+index = AnnoyIndex(vector_dim, 'angular')  # 'angular' is commonly used; adjust based on your needs
+
+# Placeholder function for embedding; replace this with actual embedding logic
+def get_embedding(text):
+    # Replace this function with actual embedding generation, e.g., using OpenAIEmbeddings
+    return np.random.rand(vector_dim).tolist()
+
+# Add documents to Annoy index
+for i, doc in enumerate(documents):
+    embedding = get_embedding(doc.page_content)
+    index.add_item(i, embedding)
+index.build(10)  # You can adjust the number of trees for accuracy/speed tradeoff
 
 def query_openai(prompt):
     """Query OpenAI with the provided prompt."""
     try:
-        docs = vectorstore.similarity_search(prompt, k=3)
-        if not docs:
+        # Find the top 3 most similar items in the Annoy index
+        query_embedding = get_embedding(prompt)
+        nearest_indices = index.get_nns_by_vector(query_embedding, 3, include_distances=False)
+        nearest_docs = [documents[i] for i in nearest_indices]
+
+        if not nearest_docs:
             return "No relevant documents found.", []
 
-        context = "\n\n".join([doc.page_content for doc in docs])
+        context = "\n\n".join([doc.page_content for doc in nearest_docs])
         completion = client.chat.completions.create(
             model="mattshumer/reflection-70b:free",
             messages=[
@@ -114,9 +132,13 @@ def upload_file():
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         # Reload documents after uploading a new file
-        global documents, vectorstore
+        global documents, index
         documents = load_documents()
-        vectorstore = FAISS.from_documents(documents, OpenAIEmbeddings())
+        index = AnnoyIndex(vector_dim, 'angular')
+        for i, doc in enumerate(documents):
+            embedding = get_embedding(doc.page_content)
+            index.add_item(i, embedding)
+        index.build(10)
         return redirect(url_for('index'))
     return redirect(url_for('index'))
 
@@ -135,3 +157,4 @@ def ai_search():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True)
+
