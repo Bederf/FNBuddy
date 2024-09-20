@@ -55,11 +55,11 @@ Before you begin, ensure you have the following installed:
 
 2. **Create and activate a virtual environment:**
 
-# Ensure Python 3.10 is installed
-
+  ```bash
+  Ensure Python 3.10 is installed
   python3.10 -m venv venv
   source venv/bin/activate   # On Windows use: venv\Scripts\activate
-
+   ```
    
    ```
 
