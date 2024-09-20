@@ -87,7 +87,7 @@ Before you begin, ensure you have the following installed:
 5. **Run the Flask app:**
 
    ```bash
-   python app.py
+   python3 app.py
    ```
 
    Your local app should now be running on `http://127.0.0.1:5006/`.
