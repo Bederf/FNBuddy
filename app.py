@@ -84,11 +84,11 @@ async def process_file(file_path: str, filename: str):
     Returns:
         list: A list of Document objects extracted from the file.
     """
-    if filename.lower().endswith('.txt'):
-        loader = TextLoader(file_path)
-        return await asyncio.to_thread(loader.load)
-    elif filename.lower().endswith('.pdf'):
-        try:
+    try:
+        if filename.lower().endswith('.txt'):
+            loader = TextLoader(file_path)
+            return await asyncio.to_thread(loader.load)
+        elif filename.lower().endswith('.pdf'):
             async with aiofiles.open(file_path, 'rb') as f:
                 pdf_content = await f.read()
             with pdfplumber.open(io.BytesIO(pdf_content)) as pdf:
@@ -97,9 +97,9 @@ async def process_file(file_path: str, filename: str):
                     pdf_text += page.extract_text() or ""
                 return [Document(page_content=chunk, metadata={"source": filename}) 
                         for chunk in chunk_text(pdf_text, chunk_size=1000)]
-        except Exception as e:
-            app.logger.error(f"Failed to load PDF file {filename}: {e}")
-            return []
+    except Exception as e:
+        app.logger.error(f"Failed to load file {filename}: {e}")
+        return []
 
 async def load_documents():
     """
@@ -195,19 +195,17 @@ async def query_openai(prompt: str):
         )
         answer = completion.choices[0].message.content
 
-        # Generate two related questions using a simplified message format
         related_queries_completion = await asyncio.to_thread(
             client.chat.completions.create,
             model="mattshumer/reflection-70b:free",
             messages=[
-                {"role": "system", "content": "Generate related questions specific to FNB, dont justify your decision"},
+                {"role": "system", "content": "Generate related questions specific to FNB, don't justify your decision."},
                 {"role": "user", "content": f"Given the prompt '{prompt}' and the answer '{answer}', suggest 2 follow-up questions relevant to FNB's context."}
             ],
             temperature=0.5
         )
 
-        # Extract only the related queries, filtering out any unnecessary text
-        related_queries = [query.strip() for query in related_queries_completion.choices[0].message.content.split('\n') if query.strip() and not query.lower().startswith('this question')]
+        related_queries = [query.strip() for query in related_queries_completion.choices[0].message.content.split('\n') if query.strip()]
         
         return answer, related_queries
 
@@ -236,22 +234,22 @@ async def upload_file():
     Handle file uploads and reload documents after new files are uploaded.
     """
     if 'file' not in (await request.files):
-        return redirect(request.url)
-    
+        return jsonify({"error": "No file part in the request."}), 400
+
     file = (await request.files)['file']
     if file.filename == '':
-        return redirect(request.url)
+        return jsonify({"error": "No file selected for upload."}), 400
     
-    if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        await file.save(file_path)
-        
-        # Reload documents after uploading a new file
-        await load_documents()
-        return redirect(url_for('index'))
-    
-    return redirect(request.url)
+    if not allowed_file(file.filename):
+        return jsonify({"error": "File type not allowed."}), 400
+
+    filename = secure_filename(file.filename)
+    file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    await file.save(file_path)
+
+    # Reload documents after uploading a new file
+    await load_documents()
+    return redirect(url_for('index'))
 
 @app.route('/ai_search', methods=['POST'])
 async def ai_search():
